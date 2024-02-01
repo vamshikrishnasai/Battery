@@ -1,0 +1,60 @@
+* {
+    background-color: black;
+}
+.battery {
+    height: 200px;
+    width: 115px;
+    border: 3px solid white;
+    border-radius: 8px;
+    position: relative;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.child {
+    height: 20px;
+    width: 115px;
+    background-color: red;
+    position: absolute; 
+    bottom: 0; 
+              animation: battery 5s linear 0s infinite normal; 
+
+              
+}
+.parent1{
+display: flex;
+justify-content: center;
+margin-bottom: 0px;
+}
+.child2{
+height:10px;
+width: 20px;
+border: 2px solid white;
+border-radius:30% ;
+display: flex;
+justify-content: center;
+}
+@keyframes battery{
+0%{
+height:0%;
+}
+25%{
+height:25%;
+background-color: yellow;
+}
+50%{
+height:50%;
+background-color: orange;
+}
+75%{
+height:75%;
+background-color: green;
+}
+100%{
+height:100%;
+background-color: rgb(0,255,0);
+
+}
+}
